@@ -20,7 +20,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 @app.get("/")
 def root():
-     return{"message":"Hello FastAPI"}
+     return{"message":"FastAPI Learning Project"}
 @app.exception_handler(Exception)
 async def global_exception_handler(
     request: Request,
